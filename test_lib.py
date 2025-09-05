@@ -9,23 +9,23 @@ nlp = spacy.load("pt_core_news_sm")
 STEMMER = RSLPStemmer()
 PT_STOPWORDS = set(stopwords.words('portuguese'))
 
-#REGEX 
-#cpf
-# cpf = 'Fulana de tal, com cpf 232.867.920-04, relatou que ...'
-# cpf_clean = re.sub(r"\d{3}\.\d{3}\.\d{3}\W*\d{2}", ' ', cpf)
-# print(cpf_clean)
+REGEX 
+cpf
+cpf = 'Fulana de tal, com cpf 232.867.920-04, relatou que ...'
+cpf_clean = re.sub(r"\d{3}\.\d{3}\.\d{3}\W*\d{2}", ' ', cpf)
+print(cpf_clean)
 
-# #email
-# email = 'Fulana de tal, com email mluizars9@gmail.com, relatou que...'
-# email_clean = re.sub(r"\b[\w._]+@[\w.]+\.\w{2,}\b", ' ', email)
-# print(email_clean)
+#email
+email = 'Fulana de tal, com email mluizars9@gmail.com, relatou que...'
+email_clean = re.sub(r"\b[\w._]+@[\w.]+\.\w{2,}\b", ' ', email)
+print(email_clean)
 
-# #rg de todos os tipos
-# rg = 'Fulana de tal, portadora do rg 12.345.678-9, relatou que...'
-# rg2 = 'Ciclana de tal com o rg 1.234.567'
-# rg1_clean = re.sub(r"\d\.?\d\.?-?\d", ' ', rg )
-# rg2_clean = re.sub(r"\d\.?\d\.?-?\d", ' ', rg )
-# print(rg1_clean, '\n', rg2_clean)
+#rg de todos os tipos
+rg = 'Fulana de tal, portadora do rg 12.345.678-9, relatou que...'
+rg2 = 'Ciclana de tal com o rg 1.234.567'
+rg1_clean = re.sub(r"\d\.?\d\.?-?\d", ' ', rg )
+rg2_clean = re.sub(r"\d\.?\d\.?-?\d", ' ', rg )
+print(rg1_clean, '\n', rg2_clean)
 
 #TOKENIZAÇÃO, STOPWORDS, LEMMATIZAÇÃO
 texto = 'Com a evolução contínua da tecnologia, o processamento de linguagem natural (PLN) tornou-se uma ferramenta essencial na análise de grandes volumes de dados textuais.' \
