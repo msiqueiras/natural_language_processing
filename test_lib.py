@@ -9,7 +9,7 @@ nlp = spacy.load("pt_core_news_sm")
 STEMMER = RSLPStemmer()
 PT_STOPWORDS = set(stopwords.words('portuguese'))
 
-REGEX 
+#REGEX 
 cpf
 cpf = 'Fulana de tal, com cpf 232.867.920-04, relatou que ...'
 cpf_clean = re.sub(r"\d{3}\.\d{3}\.\d{3}\W*\d{2}", ' ', cpf)
