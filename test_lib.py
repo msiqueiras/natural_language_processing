@@ -9,6 +9,7 @@ nlp = spacy.load("pt_core_news_sm")
 STEMMER = RSLPStemmer()
 PT_STOPWORDS = set(stopwords.words('portuguese'))
 
+print('EXPRESSÕES REGULARES')
 #REGEX 
 cpf
 cpf = 'Fulana de tal, com cpf 232.867.920-04, relatou que ...'
@@ -27,7 +28,10 @@ rg1_clean = re.sub(r"\d\.?\d\.?-?\d", ' ', rg )
 rg2_clean = re.sub(r"\d\.?\d\.?-?\d", ' ', rg )
 print(rg1_clean, '\n', rg2_clean)
 
-#TOKENIZAÇÃO, STOPWORDS, LEMMATIZAÇÃO
+print(50*'-')
+
+print('TOKENIZAÇÃO, STOPWORDS, STEMMING E LEMMATIZAÇÃO')
+#TOKENIZAÇÃO, STOPWORDS, STEMMING, LEMMATIZAÇÃO
 texto = 'Com a evolução contínua da tecnologia, o processamento de linguagem natural (PLN) tornou-se uma ferramenta essencial na análise de grandes volumes de dados textuais.' \
 ' O PLN permite que máquinas compreendam e interpretem a linguagem humana, facilitando a extração de informações valiosas e a automação de tarefas que antes exigiam intervenção humana. ' \
 'Técnicas avançadas de PLN são utilizadas em diversas aplicações, desde assistentes virtuais até sistemas de recomendação, contribuindo significativamente para a eficiência e a personalização dos serviços oferecidos. ' \
